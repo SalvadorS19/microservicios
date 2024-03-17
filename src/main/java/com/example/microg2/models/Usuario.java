@@ -36,8 +36,8 @@ public class Usuario {
             inverseJoinColumns = @JoinColumn(name="partida_id", referencedColumnName="id")
     )
     private List<Partida> partidas;
-    @OneToMany(mappedBy = "sugerencia")
+    @OneToMany(mappedBy = "usuario")
     private List<Sugerencia> sugerencias;
-    @OneToMany(mappedBy = "mensaje")
+    @OneToMany(mappedBy = "usuario")
     private List<Mensaje> mensajes;
 }
